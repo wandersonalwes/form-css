@@ -1,6 +1,6 @@
 # FormCSS
 
-[presentation](https://github.com/wandersonalwes/form-css/blob/master/.github/presentation.gif)
+![presentation](https://github.com/wandersonalwes/form-css/blob/master/.github/presentation.gif)
 
 [![LinkedIn](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)](https://github.com/wandersonalwes/)
 
