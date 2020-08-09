@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input</title>
+
+  <link href="./style.css" type="text/css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="input-wrapper">
+
+      <label class="input-label" for="name">
+        <input required class="input-field" type="text" id="name" placeholder="Nome completo" autocomplete="off" />
+        <span>Nome completo</span>
+      </label>
+    </div>
+
+    <div class="input-wrapper">
+
+      <label class="input-label" for="email">
+        <input required class="input-field" type="text" id="email" placeholder="E-mail" autocomplete="off" />
+        <span>E-mail</span>
+      </label>
+    </div>
+
+    <div class="input-wrapper">
+
+      <label class="input-label" for="password">
+        <input required class="input-field" type="password" id="password" placeholder="Senha" autocomplete="off" />
+        <span>Senha</span>
+
+        <button onclick="togglePasswordVisibility()">
+          <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-eye">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </label>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

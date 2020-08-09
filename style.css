@@ -1,0 +1,102 @@
+body {
+  background: #F0F0F7;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+}
+.container .input-wrapper + .input-wrapper {
+  border-top: 0;
+}
+
+.container .input-wrapper:first-child {
+  border-radius: 8px 8px 0 0;
+}
+.container .input-wrapper:last-child {
+  border-radius: 0 0 8px 8px;
+  border-width: 1px !important;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 352px;
+  border: 1px solid #E6E6F0;
+  background: #fff;
+}
+
+.input-wrapper .input-label > .input-field {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #6A6180;
+  background: transparent;
+  border: 0;
+  height: 72px;
+  width: 352px;
+  padding-left: 24px;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.input-wrapper .input-label > .input-field::placeholder {
+  color: transparent;
+}
+
+.input-wrapper .input-label > .input-field:focus {
+  outline: none;
+}
+
+.input-wrapper .input-label:focus-within::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: calc(100% - 30px);
+  top: 15px;
+  bottom: 15px;
+  left: 0;
+  background: #8257E5;
+  z-index: 100;
+}
+
+.input-wrapper .input-label > span {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  color: #9C98A6;
+  font-size: 16px;
+}
+
+.input-wrapper .input-label button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: 0;
+  background: transparent;
+}
+.input-wrapper .input-label button:hover {
+  cursor: pointer;
+}
+
+.input-wrapper .input-label button:focus {
+  outline: none;
+}
+
+.input-wrapper .input-label button svg {
+  color: #9C98A6;
+}
+
+.input-wrapper .input-label button svg:hover {
+  color: #6A6180;
+}
+
+.input-wrapper .input-label > .input-field:focus + span,
+.input-wrapper .input-label > .input-field:valid + span{
+  top: 14px;
+  color: #C1BCCC;
+  font-size: 14px;
+}
